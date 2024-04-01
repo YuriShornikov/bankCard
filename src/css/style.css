@@ -1,0 +1,79 @@
+/* body {
+    color: #333;
+} */
+
+.cards {
+    display: block;
+    padding-left: 0;
+    list-style: none;
+    margin: 10px 0;
+    height: 25px;
+}
+
+.card.disabled {
+    background-position: 0 -25px;
+    opacity: .3;
+}
+
+.card {
+    float: left;
+    width: 39px;
+    height: 25px;
+    text-indent: -9999px;
+    background-position: 0 0;
+    margin-right: 4px;
+}
+
+.card.visa {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-visa.gif");
+}
+
+.card.master {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-mastercard.gif");
+}
+
+.card.amex {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-amex.gif");
+}
+
+.card.discover {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-discover.gif");
+}
+
+.card.jcb {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-jcb.gif");
+}
+
+.card.diners {
+    background-image: url("https://www.validcreditcardnumber.com/static/img/card-diners.gif");
+}
+
+.innogrn-form-widget {
+    display: flex;
+}
+
+.submit {
+    margin-left: 10px;
+    border: rgb(94,180,98);
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(94,180,98);
+}
+
+
+
+/* .hidden {
+    display: none;
+} */
+
+
+
+.input {
+    display: inline-block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(86,86,86);
+    border: 1px solid rgb(203,203,203);
+    border-radius: .25rem;
+}
