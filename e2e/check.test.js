@@ -1,4 +1,4 @@
-import puppetteer from 'puppeteer';
+import puppeteer from 'puppeteer';
 
 jest.setTimeout(30000);
 
@@ -8,10 +8,10 @@ describe('check valid form', () => {
   const baseUrl = 'http://localhost:8080';
 
   beforeAll(async () => {
-    browser = await puppetteer.launch({
+    browser = await puppeteer.launch({
       headless: false,
       slowMo: 100,
-      devtools: true,
+      devtools: true
     });
     page = await browser.newPage();
   });
@@ -22,7 +22,7 @@ describe('check valid form', () => {
     await page.click('.submit');
     await page.waitForSelector('.input.valid');
     const result = await page.evaluate(() => {
-      const inp = document.querySelector('.input')
+      const inp = document.querySelector('.input');
       return inp.classList.contains('valid');
     });
 
@@ -40,7 +40,7 @@ describe('check valid form', () => {
 
     expect(inputValue).toBe('');
   });
-  
+
   afterAll(async () => {
     await browser.close();
   });

@@ -15,6 +15,6 @@ export function isValidInn(cardNum) {
   }
 
   // Вычисляем контрольную сумму после цикла
-  const checksum = sum % 10 !== 0 ? 10 - sum % 10 : 0;
+  const checksum = sum % 10 !== 0 ? 10 - (sum % 10) : 0;
   return checksum == controlSum;
 }
